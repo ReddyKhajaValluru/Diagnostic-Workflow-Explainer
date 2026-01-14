@@ -7,6 +7,28 @@ An LLM-powered RAG chatbot that helps medical students explore diagnostic workfl
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+## ✨ Features
+
+- **Medical Queries** — Ask questions about diagnostic workflows, symptoms, and conditions
+- **RAG Pipeline** — Retrieval-Augmented Generation grounds responses in clinical evidence
+- **Chat History** — Maintains context across multiple questions
+- **Source Transparency** — View retrieved documents that inform each response
+
+## 📊 Knowledge Base
+- **24 Diagnostic Workflows** — Covering conditions from Heart Failure to Diabetes to Stroke
+- **511 Clinical Notes** — Real annotated cases from MIMIC-IV
+
+## 🛠️ Tech Stack
+
+| Component | Technology |
+|-----------|------------|
+| **LLM** | Llama 3.3 70B (via Groq API) |
+| **Embeddings** | HuggingFace BGE-small-en-v1.5 |
+| **Vector Store** | FAISS |
+| **Framework** | LangChain |
+| **Frontend** | Streamlit |
+| **Dataset** | MIMIC-IV-Ext-DiReCT |
+
 ## 📦 Installation
 
 ### 1. Clone the repository
@@ -106,31 +128,13 @@ The app will open in your browser at `http://localhost:8501`.
 
 If you use this project or the underlying dataset, please cite:
 
-### DiReCT Dataset
+### MIMIC-IV-Ext-DiReCT Dataset
 
-```bibtex
-@article{wang2024direct,
-  title={DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models},
-  author={Wang, Bowen and Chang, Jiuyang and Qian, Yiwen and Chen, Guoxin and Chen, Junhao and Jiang, Zhouqiang and others},
-  journal={arXiv preprint arXiv:2408.01933},
-  year={2024}
-}
-```
+> Wang, B., Chang, J., & Qian, Y. (2025). MIMIC-IV-Ext-DiReCT (version 1.0.0). PhysioNet. https://doi.org/10.13026/yf96-kc87
 
 ### MIMIC-IV
 
-```bibtex
-@article{johnson2023mimic,
-  title={MIMIC-IV, a freely accessible electronic health record dataset},
-  author={Johnson, Alistair EW and Bulgarelli, Lucas and Shen, Lu and Gayles, Alvin and Shammout, Ayad and Horng, Steven and others},
-  journal={Scientific Data},
-  volume={10},
-  number={1},
-  pages={1},
-  year={2023},
-  publisher={Nature Publishing Group}
-}
-```
+> Johnson, A., Bulgarelli, L., Pollard, T., Gow, B., Moody, B., Horng, S., Celi, L. A., & Mark, R. (2024). MIMIC-IV (version 3.1). PhysioNet. https://doi.org/10.13026/kpb9-mt58
 
 ## ⚖️ License & Data Usage
 
